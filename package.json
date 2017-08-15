@@ -5,9 +5,6 @@
   "description": "A short description of your package",
   "keywords": [
   ],
-  "activationCommands": {
-    "atom-workspace": "atom-windows-titlebar:toggle"
-  },
   "repository": "https://github.com/atom/atom-windows-titlebar",
   "license": "MIT",
   "engines": {
