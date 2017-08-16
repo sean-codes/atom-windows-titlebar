@@ -31,6 +31,13 @@
             pointer-events:initial;
          }
       }
+      &:active{
+         .submenu{
+            max-height:0px;
+            pointer-events:none!important;
+            opacity:0;
+         }
+      }
 
       .submenu{
          position:absolute;
@@ -46,6 +53,7 @@
             white-space:nowrap;
             position:relative;
             display:flex;
+
             .keymap{
                color:rgba(0, 0, 0, 0.5);
                flex:1;
