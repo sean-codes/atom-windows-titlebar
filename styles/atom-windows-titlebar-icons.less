@@ -1,39 +1,49 @@
 
 @controls-color: @text-color;
 .control-icon-maximize{
-   font-size:8px !important;
-   position:relative;
-   width:1em;
-   height:1em;
-   border:1px solid @controls-color;
-   display:inline-block;
-   margin:0px auto;
-   &:after, &:before{
-      content: '';
-      position:absolute;
+   &.maximized {
+      font-size:8px !important;
+      position:relative;
       width:1em;
       height:1em;
-   }
+      border:1px solid @controls-color;
+      display:inline-block;
+      margin:0px auto;
+      &:after, &:before{
+         content: '';
+         position:absolute;
+         width:1em;
+         height:1em;
+      }
 
-   &:after{
-      border-left:1px solid @controls-color;
-      border-top:1px solid @controls-color;
-      height: 0.19em;
-      top: -0.19em;
-      left: 0.19em;
-      transform: translateY(-2px) translateX(0px);
-   }
+      &:after{
+         border-left:1px solid @controls-color;
+         border-top:1px solid @controls-color;
+         height: 0.19em;
+         top: -0.19em;
+         left: 0.19em;
+         transform: translateY(-2px) translateX(0px);
+      }
 
-   &:before{
-      border-bottom:1px solid @controls-color;
-      border-right:1px solid @controls-color;
-      transform: translateX(2px) translateY(-2px);
-      width: 0.19em;
-      right: -0.19em;
-      top: -0.19em;
+      &:before{
+         border-bottom:1px solid @controls-color;
+         border-right:1px solid @controls-color;
+         transform: translateX(2px) translateY(-2px);
+         width: 0.19em;
+         right: -0.19em;
+         top: -0.19em;
+      }
+   }
+   &:not(.maximized){
+      font-size:8px !important;
+      position:relative;
+      width:1.2em;
+      height:1.2em;
+      border:1px solid @controls-color;
+      display:inline-block;
+      margin:0px auto;
    }
 }
-
 .control-icon-minimize{
    font-size:8px;
    position:relative;
@@ -58,11 +68,11 @@
    display:inline-block;
    &:after, &:before{
       content: '';
-      width: 1.5em;
+      width: 1.75em;
       background: lighten(@controls-color, 15%);
-      height:1.25px;
-      top: 0.25em;
-      left: 0px;
+      height:1px;
+      top: 0.3em;
+      left: -0.4em;
       position: absolute;
       transform:rotateZ(-45.5deg);
    }
