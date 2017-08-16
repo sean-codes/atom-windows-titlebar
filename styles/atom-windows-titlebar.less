@@ -11,8 +11,9 @@
       font-weight:400 !important;
    }
    display:flex;
-   min-height:40px;
-   line-height:40px;
+   min-height:28px;
+   line-height:28px;
+   border-bottom:1px solid rgba(0, 0, 0, 0.5);
    .icon{
       flex:1;
       text-align:center;
@@ -21,6 +22,9 @@
    .title{
       flex:1;
       -webkit-app-region: drag;
+      height:18px;
+      line-height:18px;
+      margin-top:6px;
    }
    .controls{
       flex:1;
@@ -43,6 +47,8 @@
       box-sizing:border-box;
       font-weight:400 !important;
    }
+   display:none;
+   &.show{ display: block;}
    line-height:20px;
    font-size:12px;
    background:#F0F0F0;
