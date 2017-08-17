@@ -10,6 +10,14 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
+  "configSchema": {
+    "hideFrame": {
+      "title": "Hide Frame",
+      "description": "Hide the default frame for windows",
+      "type": "boolean",
+      "default": false
+    }
+  },
   "dependencies": {
   }
 }
