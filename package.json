@@ -1,10 +1,9 @@
 {
   "name": "atom-windows-titlebar",
   "main": "./lib/atom-windows-titlebar",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "The replacement titlebar for Windows",
-  "keywords": [
-  ],
+  "keywords": [],
   "repository": "https://github.com/sean-codes/atom-windows-titlebar",
   "license": "MIT",
   "engines": {
@@ -18,6 +17,5 @@
       "default": false
     }
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
