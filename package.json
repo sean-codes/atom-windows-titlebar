@@ -2,7 +2,7 @@
   "name": "atom-windows-titlebar",
   "main": "./lib/atom-windows-titlebar",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "The replacement titlebar for Windows",
   "keywords": [
   ],
   "repository": "https://github.com/atom/atom-windows-titlebar",
@@ -13,7 +13,7 @@
   "configSchema": {
     "hideFrame": {
       "title": "Hide Frame",
-      "description": "Hide the default frame for windows",
+      "description": "Hide windows frame. After changing this setting you need to restart Atom",
       "type": "boolean",
       "default": false
     }
