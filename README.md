@@ -9,16 +9,20 @@ The titlebar replacement for Atom on Windows 10
 ![Menu](https://raw.githubusercontent.com/sean-codes/atom-windows-titlebar/master/example/example_menu.gif)
 
 ## How it works
-You must click the toggleFrameButton to enable/disable windows default frame!
+You need to enable/disable windows default frame! Please do this automatically or manually
 
-### This file is found:
+### AUTO:
+#### Go to this package settings and check to hide frame
+![Setting](https://raw.githubusercontent.com/sean-codes/atom-windows-titlebar/master/example/example_settings.png)
+
+### MANUAL:
+#### Find this file:
 
     C:\Users\{username}\AppData\Local\atom\app{version}\resources\app\src\main-process\atom-window.js
 
-### Around line 58-60 inside the options add a value `frame: false,`
+#### Around line 58-60 inside the options add a value `frame: false,`
 
     options = {
         frame: false, // Add this line!
         show: false,
         title: 'Atom',
-        
