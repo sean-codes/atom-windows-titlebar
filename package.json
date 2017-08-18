@@ -5,7 +5,7 @@
   "description": "The replacement titlebar for Windows",
   "keywords": [
   ],
-  "repository": "https://github.com/atom/atom-windows-titlebar",
+  "repository": "https://github.com/sean-codes/atom-windows-titlebar",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
