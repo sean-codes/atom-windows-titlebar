@@ -1,12 +1,11 @@
 
-@controls-color: @text-color;
 .control-icon-maximize{
    &.maximized {
       font-size:8px !important;
       position:relative;
       width:1em;
       height:1em;
-      border:1px solid @controls-color;
+      border:1px solid @text-color;
       display:inline-block;
       margin:0px auto;
       &:after, &:before{
@@ -17,8 +16,8 @@
       }
 
       &:after{
-         border-left:1px solid @controls-color;
-         border-top:1px solid @controls-color;
+         border-left:1px solid @text-color;
+         border-top:1px solid @text-color;
          height: 0.19em;
          top: -0.19em;
          left: 0.19em;
@@ -26,8 +25,8 @@
       }
 
       &:before{
-         border-bottom:1px solid @controls-color;
-         border-right:1px solid @controls-color;
+         border-bottom:1px solid @text-color;
+         border-right:1px solid @text-color;
          transform: translateX(2px) translateY(-2px);
          width: 0.19em;
          right: -0.19em;
@@ -39,7 +38,7 @@
       position:relative;
       width:1.2em;
       height:1.2em;
-      border:1px solid @controls-color;
+      border:1px solid @text-color;
       display:inline-block;
       margin:0px auto;
    }
@@ -53,7 +52,7 @@
    &:after{
       content: '';
       width: 1.25em;
-      border-top: 1px solid @controls-color;
+      border-top: 1px solid @text-color;
       top: 0.25em;
       left: 0px;
       position: absolute;
@@ -69,7 +68,7 @@
    &:after, &:before{
       content: '';
       width: 1.75em;
-      background: lighten(@controls-color, 15%);
+      background: lighten(@text-color, 15%);
       height:1px;
       top: 0.3em;
       left: -0.4em;
