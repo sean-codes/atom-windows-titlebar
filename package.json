@@ -1,7 +1,7 @@
 {
   "name": "atom-windows-titlebar",
   "main": "./lib/atom-windows-titlebar",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "The replacement titlebar for Windows",
   "keywords": [],
   "repository": "https://github.com/sean-codes/atom-windows-titlebar",
