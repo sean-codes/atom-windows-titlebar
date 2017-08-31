@@ -1,5 +1,5 @@
 {
    "atom-workspace": {
-      "alt": "atom-windows-titlebar:togglemenu"
+      "^alt": "atom-windows-titlebar:togglemenu"
    }
 }
