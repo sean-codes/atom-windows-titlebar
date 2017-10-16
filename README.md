@@ -12,11 +12,17 @@ The titlebar replacement for Atom on Windows 10
 You need to enable/disable windows default frame!
 > Atom switched back to ASAR and this is a bit scary. We need an option to disable windows frame from atom for Windows Users. [Pull Request](https://github.com/atom/atom/pull/15871)
 
-### 1. Terminal/CMD to your atom/app-X.XX.X folder
+### 1. Close Atom
+make sure all atom windows are closed
+
+### 2. Terminal/CMD to your atom/app-X.XX.X folder
 run `cd C:\Users\{user}\AppData\Local\atom\app-{version}`
 
-### 2. npm install asar
+### 3. npm install asar
 run `npm install asar`
 
-### 3. node toggleframe.js
+### 4. node toggleframe.js
 run `node toggleframe.js`
+
+### 5. Open atom!
+Open atom!
