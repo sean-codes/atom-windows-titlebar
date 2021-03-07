@@ -5,14 +5,21 @@
       box-sizing:border-box;
       font-weight:400 !important;
    }
+
    display:none;
-   &.show{ display: block;}
+   &.show{ display: block; }
    line-height:20px;
    font-size:12px;
-   background:#F0F0F0;
-   color:#000;
+   color: @text-color;
    -webkit-font-smoothing: antialiased;
    z-index:1000;
+   border-bottom:1px solid @pane-item-border-color;
+   padding-left: 4px;
+   
+   hr {
+     border-top: 1px solid @base-border-color;
+   }
+
    .menu{
       font-weight:600;
       display:inline-block;
@@ -27,6 +34,8 @@
             pointer-events:initial;
          }
       }
+
+
       &:active{
          .submenu{
             max-height:0px;
@@ -39,11 +48,12 @@
          position:absolute;
          opacity:0;
          pointer-events:none;
-         background:#FFF;
+         background: @app-background-color;
          border:1px solid rgba(0, 0, 0, 0.25);
          box-shadow:0px 2px 3px rgba(0, 0, 0, 0.25);
          left: 0px;
          min-width:250px;
+
          .submenu-item{
             padding:3px 20px 3px 20px;
             white-space:nowrap;
@@ -51,14 +61,16 @@
             display:flex;
 
             .keymap{
-               color:rgba(0, 0, 0, 0.5);
+               color:@text-color;
                flex:1;
                text-align:right;
                min-width:125px;
             }
+
             .label{
                flex:1;
             }
+
             .submenu{
                left:initial;
                right:0px;
@@ -70,6 +82,7 @@
                .submenu-item{
                }
             }
+
             &:hover{
                background:rgba(0, 0, 0, 0.25);
                .submenu{
@@ -77,11 +90,12 @@
                   pointer-events:initial
                }
             }
+
             &.has-submenu:after{
                content: '';
                position:absolute;
                border: 4px solid transparent;
-               border-left:4px solid rgba(0, 0, 0, 0.75);
+               border-left:4px solid @text-color;
                right:5px;
                top:8px;
             }
